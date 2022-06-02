@@ -1,0 +1,15 @@
+C:\Users\atsviatsinski\source\repos\uptrance2day\mathexpression_evalutor\Evalutor\Evalutor\bin\Debug\net6.0\Evalutor.exe
+C:\Users\atsviatsinski\source\repos\uptrance2day\mathexpression_evalutor\Evalutor\Evalutor\bin\Debug\net6.0\Evalutor.deps.json
+C:\Users\atsviatsinski\source\repos\uptrance2day\mathexpression_evalutor\Evalutor\Evalutor\bin\Debug\net6.0\Evalutor.runtimeconfig.json
+C:\Users\atsviatsinski\source\repos\uptrance2day\mathexpression_evalutor\Evalutor\Evalutor\bin\Debug\net6.0\Evalutor.dll
+C:\Users\atsviatsinski\source\repos\uptrance2day\mathexpression_evalutor\Evalutor\Evalutor\bin\Debug\net6.0\Evalutor.pdb
+C:\Users\atsviatsinski\source\repos\uptrance2day\mathexpression_evalutor\Evalutor\Evalutor\obj\Debug\net6.0\Evalutor.csproj.AssemblyReference.cache
+C:\Users\atsviatsinski\source\repos\uptrance2day\mathexpression_evalutor\Evalutor\Evalutor\obj\Debug\net6.0\Evalutor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atsviatsinski\source\repos\uptrance2day\mathexpression_evalutor\Evalutor\Evalutor\obj\Debug\net6.0\Evalutor.AssemblyInfoInputs.cache
+C:\Users\atsviatsinski\source\repos\uptrance2day\mathexpression_evalutor\Evalutor\Evalutor\obj\Debug\net6.0\Evalutor.AssemblyInfo.cs
+C:\Users\atsviatsinski\source\repos\uptrance2day\mathexpression_evalutor\Evalutor\Evalutor\obj\Debug\net6.0\Evalutor.csproj.CoreCompileInputs.cache
+C:\Users\atsviatsinski\source\repos\uptrance2day\mathexpression_evalutor\Evalutor\Evalutor\obj\Debug\net6.0\Evalutor.dll
+C:\Users\atsviatsinski\source\repos\uptrance2day\mathexpression_evalutor\Evalutor\Evalutor\obj\Debug\net6.0\refint\Evalutor.dll
+C:\Users\atsviatsinski\source\repos\uptrance2day\mathexpression_evalutor\Evalutor\Evalutor\obj\Debug\net6.0\Evalutor.pdb
+C:\Users\atsviatsinski\source\repos\uptrance2day\mathexpression_evalutor\Evalutor\Evalutor\obj\Debug\net6.0\Evalutor.genruntimeconfig.cache
+C:\Users\atsviatsinski\source\repos\uptrance2day\mathexpression_evalutor\Evalutor\Evalutor\obj\Debug\net6.0\ref\Evalutor.dll
