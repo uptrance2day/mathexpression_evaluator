@@ -21,6 +21,7 @@ namespace Evaluator.Tests
         [InlineData("0 - 5", -5)]
         [InlineData("0 - -5", 5)]
         [InlineData("2.5 - -4.7", 7.2)]
+        [InlineData("2.5 * 2 / 2.5", 2)]
         // original task tests
         [InlineData("1-1", 0)]
         [InlineData("1 -1", 0)]
@@ -29,12 +30,13 @@ namespace Evaluator.Tests
         [InlineData("1- -1", 2)]
         [InlineData("1 - -1", 2)]
         [InlineData("1--1", 2)]
-        //[InlineData("6 + -(4)", 2)]
-        //[InlineData("6 + -( -4)", 10)]
+        [InlineData("6 + -(4)", 2)]
+        [InlineData("6 + -( -4)", 10)]
         [InlineData("1 - - 1", null, true)]
         [InlineData("1- - 1", null, true)]
-        //[InlineData("6 + - (4)", null)]
-        //[InlineData("6 + -(- 4)", null)]
+        [InlineData("6 + - (4)", null, true)]
+        [InlineData("6 + -(- 4)", null, true)]
+        [InlineData("(2 / (2 + 3.33) * 4) - -6", 7.50094)]
         public void Eval_Correct_Results(string expression, decimal value, bool checkForException = false)
         {
             if (checkForException)
@@ -43,7 +45,7 @@ namespace Evaluator.Tests
             }
             else
             {
-                Assert.Equal(value, _calculator.Eval(expression));
+                Assert.Equal(value, Math.Round(_calculator.Eval(expression), 5));
             }
         }
     }

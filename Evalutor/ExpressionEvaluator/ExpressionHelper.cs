@@ -8,14 +8,14 @@ namespace Evalutor
 {
     public static class ExpressionHelper
     {
-        public static string FindMostDeepSubExpression(this string @this, string subExpressionStartToken, string subExpressionEndToken, int startFromPosition = 0)
+        public static (string, int, int) FindMostDeepSubExpression(this string @this, string subExpressionStartToken, string subExpressionEndToken, int startFromPosition = 0)
         {
             var startPosition = @this.FindToken(subExpressionStartToken, startFromPosition);
             var endPosition = @this.FindToken(subExpressionEndToken, startFromPosition);
 
             if (startPosition == endPosition)
             {
-                return string.Empty; // no sub expression with passed start and end token found
+                return (@this, 0, @this.Length); // no sub expression with passed start and end token found
             }
 
             if (startPosition == -1 || endPosition == -1)
@@ -33,7 +33,7 @@ namespace Evalutor
             }
             else
             {
-                return sub; // found expression the most deep
+                return (sub, startPosition, endPosition - startPosition + 1); // found expression the most deep
             }
         }
     }

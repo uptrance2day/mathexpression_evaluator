@@ -15,8 +15,8 @@ namespace Evaluator.Tests
         [Fact]
         public void FindSubExpression_NoError_On_Empty()
         {
-            Assert.Equal(string.Empty, string.Empty.FindMostDeepSubExpression(string.Empty, string.Empty));
-            Assert.Equal(string.Empty, "empty".FindMostDeepSubExpression("(", ")"));
+            Assert.Equal(string.Empty, string.Empty.FindMostDeepSubExpression(string.Empty, string.Empty).Item1);
+            Assert.Equal("dummy", "dummy".FindMostDeepSubExpression("(", ")").Item1);
         }
 
         [Fact]
@@ -34,7 +34,7 @@ namespace Evaluator.Tests
         [InlineData("(2 / (2 + (2-4))", "(", ")", "2-4")]
         public void FindSubExpression_Correct_Results(string expression, string startToken, string endToken, string subExpression)
         {
-            Assert.Equal(subExpression, expression.FindMostDeepSubExpression(startToken, endToken));
+            Assert.Equal(subExpression, expression.FindMostDeepSubExpression(startToken, endToken).Item1);
         }
     }
 }

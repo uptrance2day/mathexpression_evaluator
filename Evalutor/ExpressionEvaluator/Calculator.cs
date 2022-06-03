@@ -14,7 +14,22 @@ namespace Evalutor
             };
             _numberPattern = @"(-){0,1}\d+\.?\d*";
         }
-        public decimal? Eval(string expression)
+
+        public decimal Eval(string expression)
+        {
+            while (true)
+            {
+                var subExpression = expression.FindMostDeepSubExpression(Token.OpenBracket, Token.CloseBracket);
+                var value = EvalBasic(subExpression.Item1);
+                if (subExpression.Item3 == expression.Length)
+                {
+                    return value;
+                }
+                expression = expression.Remove(subExpression.Item2, subExpression.Item3).Insert(subExpression.Item2, value.ToString()).Replace("--", "");
+            }
+        } 
+
+        private decimal EvalBasic(string expression)
         {
             foreach(var operationsPattern in _priorityOperationsPattern)
             {
@@ -61,7 +76,7 @@ namespace Evalutor
             return decimal.TryParse(expression, out var value) ? value : throw new Exception("Incorrect expression passed.");
         }
 
-        private decimal? EvalOperation(decimal left, decimal right, string token)
+        private decimal EvalOperation(decimal left, decimal right, string token)
         {
             switch (token)
             {

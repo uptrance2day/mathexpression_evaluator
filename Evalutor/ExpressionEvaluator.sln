@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evalutor", "Evalutor\Evalutor.csproj", "{90FAE4D9-AD63-467B-87D8-CCCE3C5A63A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressionEvaluator", "ExpressionEvaluator\ExpressionEvaluator.csproj", "{90FAE4D9-AD63-467B-87D8-CCCE3C5A63A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evaluator.Tests", "Evaluator.Tests\Evaluator.Tests.csproj", "{624A4D47-451E-40ED-9F36-5764599517B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressionEvaluator.Tests", "ExpressionEvaluator.Tests\ExpressionEvaluator.Tests.csproj", "{624A4D47-451E-40ED-9F36-5764599517B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
