@@ -4,11 +4,11 @@ namespace Evalutor
 {
     public class Calculator
     {
-        private readonly string[] _priorityOperationsPattern;
+        private readonly string[] _prioritiedOperationPatterns;
         private readonly string _numberPattern;
         public Calculator()
         {
-            _priorityOperationsPattern = new [] {
+            _prioritiedOperationPatterns = new [] {
                     $"[{Token.Multiply}{Token.Divide}]",
                     $"[{Token.Add}{Token.Subtract}]"
             };
@@ -31,7 +31,7 @@ namespace Evalutor
 
         private decimal EvalBasic(string expression)
         {
-            foreach(var operationsPattern in _priorityOperationsPattern)
+            foreach(var operationsPattern in _prioritiedOperationPatterns)
             {
                 while (true)
                 {
